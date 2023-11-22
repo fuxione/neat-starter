@@ -48,6 +48,82 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "chain",
+        label: "Chains",
+        path: "src/chains",
+        templates: [
+          {
+            name: "basic",
+            label: "Basic Template",
+            defaultItem: () => {
+              return {
+                layout: 'basic',
+                
+              }
+            },
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+                isTitle: true,
+                required: true,
+              },
+              {
+                type: "string",
+                name: "headline",
+                label: "Headline",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "subheadline",
+                label: "Subheadline",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "question",
+                label: "Question",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "answer_1",
+                label: "Answer 1",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "answer_2",
+                label: "Answer 2",
+                required: true,
+              }, 
+
+              {
+                type: "string",
+                name: "layout",
+                label: "Layout",
+                required: true,
+              }, 
+             
+
+
+
+            ]
+          }
+        ]
+      }
+
+
+
     ],
   },
 });
