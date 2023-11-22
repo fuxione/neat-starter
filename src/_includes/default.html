@@ -21,15 +21,15 @@
     </script>
   </head>
   <body>
-    {% include "./partials/navbar.html" %}
+    
 
     {{ content | safe }}
 
-    {% if path!="privacy" and path!="terms" %}
+    
 
     {% include "./partials/footer.html" %}
 
-    {% endif %}
+    
 
     <script src="/static/js/alpine.js"></script>
 
