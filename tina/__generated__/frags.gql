@@ -1,0 +1,19 @@
+fragment PostParts on Post {
+  __typename
+  title
+  body
+}
+
+fragment ChainParts on Chain {
+  __typename
+  ... on ChainBasic {
+    title
+    headline
+    subheadline
+    description
+    question
+    answer_1
+    answer_2
+    layout
+  }
+}
